@@ -16,7 +16,7 @@ body {
 .nav {
   position: fixed;
   z-index: 10;
-  height: 50px;
+  height: 80px;
   width: 100%;
   background-color: #f9c3d6;
   box-shadow: 0 5px 20px #b5748f;
@@ -24,11 +24,19 @@ body {
 
 .nav ul {
   margin: 0;
+  height: inherit;
 }
 
 .nav ul li {
   display: inline-block;
   text-align: center;
+  height: inherit;
+}
+
+.nav ul li img {
+  object-fit: contain;
+  height: inherit;
+  padding: 10px;
 }
 
 .nav ul li a {
