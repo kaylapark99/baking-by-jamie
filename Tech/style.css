@@ -13,6 +13,14 @@ body {
   padding: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  transition: 0.5s;
+}
+
 .nav {
   position: fixed;
   z-index: 10;
@@ -49,16 +57,22 @@ body {
 
 .nav ul li a:hover {
   color: #b5748f;
-  text-decoration: none;
 }
 
 header {
   height: 100vh;
-  background-image: url("/Media/bakingjamie-bg.jpg");
+  background-image: url("/baking-by-jamie/Media/bakingjamie-bg.jpg");
   background-size: cover;
   background-color: #fdeef5;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
+  z-index: -1;
+}
+
+.center {
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 img {
@@ -66,16 +80,36 @@ img {
 }
 
 .logo {
-  position: fixed;
   width: 30%;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.slogan {
+  position: fixed;
+  text-align: center;
+  top: 90%;
+  color: white;
+  font-size: 3rem;
 }
 
 .story {
-  position: relative;
+  background: white;
   text-align: center;
+  color: #b5748f;
+  font-size: 1.1rem;
+}
+
+.story p {
+  padding: 25px 0;
+  border-bottom: 3px solid #b5748f;
+}
+
+.story a {
+  color: #f9c3d6;
+}
+
+.story a:hover {
   color: #b5748f;
 }
 
