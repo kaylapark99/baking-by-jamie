@@ -19,29 +19,31 @@
   <body>
     <div class="nav">
       <div class="col-2"></div>
-      <ul class="col-8 row">
-        <li class="col"><a href="#">Home</a></li>
-        <li class="col"><a href="#about">My Story</a></li>
+      <ul class="col-8 nav-options row">
+        <li class="col"><a href="#" class="home">Home</a></li>
+        <li class="col"><a href="#" class="about">My Story</a></li>
         <li class="col"><img src="Media/bakingjamie-logo-sm.png" /></li>
-        <li class="col"><a href="#food">Goodies</a></li>
-        <li class="col"><a href="#contact">Contact</a></li>
+        <li class="col"><a href="#" class="food">Goodies</a></li>
+        <li class="col"><a href="#" class="contact">Contact</a></li>
       </ul>
       <div class="col-2"></div>
     </div>
     <div class="container-fluid">
       <header>
         <img src="Media/bakingjamie-logo.png" class="center logo header-fix" />
-        <h1 class="center slogan header-fix">homemade, fresh, & delicious!</h1>
+        <h1 class="center center-text slogan header-fix">
+          homemade, fresh, & delicious!
+        </h1>
         <svg width="80px" height="80px" class="center">
           <circle cx="40" cy="40" r="40" fill="white" class="scroll" />
           <polygon points="55,15,40,35,25,15" style="fill: #b5748f" />
           />
         </svg>
       </header>
-      <div id="about" class="story row">
+      <div id="about" class="story center-text row">
         <div class="col-2"></div>
         <div class="about-content col-8">
-          <h1>Hi, my name's Jamie and baking is my passion!</h1>
+          <h1>Hi, my name is Jamie and baking is my passion!</h1>
           <p>
             I live in Randolph, New Jersey, with my husband, three kids, Mom,
             and two dogs. My passion for baking started a few years ago, and
@@ -62,17 +64,73 @@
         </div>
         <div class="col-2"></div>
       </div>
-      <div id="food" class="goodies">
-        <h1>MY SPECIALTIES</h1>
-        <ul>
-          <li>Cakes</li>
-          <li>Cookies</li>
-          <li>Cupcakes</li>
-          <li>Muffins</li>
-          <li>Misc.</li>
-        </ul>
+      <div id="food" class="goodies row">
+        <div class="col-1"></div>
+        <div class="col-10 center-text">
+          <h1>MY SPECIALTIES</h1>
+          <ul class="goodies-options">
+            <li class="cakes clicked">Cakes</li>
+            <li class="cookies">Cookies</li>
+            <li class="cupcake">Cupcakes</li>
+            <li class="muffin">Muffins</li>
+            <li class="misc">Misc.</li>
+          </ul>
+          <div class="cakes goodies-pics row">
+            <img src="Media/cake1.jpg" class="col-4" />
+            <img src="Media/cake2.jpg" class="col-4" />
+            <img src="Media/cake3.jpg" class="col-4" />
+            <img src="Media/cake4.jpg" class="col-4" />
+            <img src="Media/cake5.jpg" class="col-4" />
+            <img src="Media/cake6.jpg" class="col-4" />
+          </div>
+          <div class="cookies goodies-pics hide row">
+            <img src="Media/cookies1.jpg" class="col-4" />
+            <img src="Media/cookies2.jpg" class="col-4" />
+            <img src="Media/cookies3.jpg" class="col-4" />
+            <img src="Media/cookies4.jpg" class="col-4" />
+          </div>
+          <div class="cupcake goodies-pics hide row">
+            <img src="Media/cupcake1.jpg" class="col-4" />
+            <img src="Media/cupcake2.jpg" class="col-4" />
+            <img src="Media/cupcake3.jpg" class="col-4" />
+            <img src="Media/cupcake4.jpg" class="col-4" />
+            <img src="Media/cupcake5.jpg" class="col-4" />
+          </div>
+          <div class="muffin goodies-pics hide row">
+            <img src="Media/muffin1.jpg" class="col-4" />
+            <img src="Media/muffin2.jpg" class="col-4" />
+            <img src="Media/muffin3.jpg" class="col-4" />
+            <img src="Media/muffin4.jpg" class="col-4" />
+            <img src="Media/muffin5.jpg" class="col-4" />
+            <img src="Media/muffin6.jpg" class="col-4" />
+          </div>
+          <div class="misc goodies-pics hide row">
+            <img src="Media/misc1.jpg" class="col-4" />
+            <img src="Media/misc2.jpg" class="col-4" />
+            <img src="Media/misc3.jpg" class="col-4" />
+            <img src="Media/misc4.jpg" class="col-4" />
+            <img src="Media/misc5.jpg" class="col-4" />
+            <img src="Media/misc6.jpg" class="col-4" />
+            <img src="Media/misc7.jpg" class="col-4" />
+            <img src="Media/misc8.jpg" class="col-4" />
+            <img src="Media/misc9.jpg" class="col-4" />
+          </div>
+        </div>
+        <div class="col-1"></div>
       </div>
-      <div id="contact" class="contact"></div>
+      <div id="contact" class="order row">
+        <div class="col-5 order-info">
+          <h3>Order your delicious baked goods made with love; &hearts</h3>
+          <p>
+            I’m happy to discuss options or answer any questions you might have.
+            <br /><br />
+            For orders, please reach out 24-48 hrs in advance so I can prepare
+            fresh ingredients. Thank you for your support!
+          </p>
+        </div>
+        <div class="col-7"></div>
+      </div>
     </div>
+    <script src="Tech/scripts.js"></script>
   </body>
 </html>

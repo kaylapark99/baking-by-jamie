@@ -82,6 +82,10 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.center-text {
+  text-align: center;
+}
+
 .header-fix {
   position: fixed;
 }
@@ -92,7 +96,6 @@ header {
 }
 
 .slogan {
-  text-align: center;
   top: 85%;
   color: white;
   font-size: 3rem;
@@ -105,7 +108,6 @@ svg {
 
 .story {
   background: white;
-  text-align: center;
   color: #b5748f;
   font-size: 1.1rem;
 }
@@ -129,6 +131,47 @@ svg {
 }
 
 .goodies {
-  height: 100vh;
+  padding: 50px;
   background: #fdeef5;
+  color: #b5748f;
+}
+
+.goodies h1 {
+  font-size: 4rem;
+}
+
+.goodies ul {
+  border-bottom: 1px solid #b5748f;
+}
+
+.goodies ul li {
+  padding: 20px 50px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.clicked {
+  opacity: 1 !important;
+}
+
+.hide {
+  display: none;
+}
+
+.goodies-pics img {
+  margin-bottom: 30px;
+}
+
+.order {
+  padding: 50px;
+  color: white;
+  background: #b5748f;
+}
+
+.order-info {
+  border-right: 1px solid white;
+}
+
+.order-info h3 {
+  padding-bottom: 25px;
 }
