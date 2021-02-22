@@ -167,11 +167,37 @@ svg {
   color: white;
   background: #b5748f;
 }
-
-.order-info {
-  border-right: 1px solid white;
-}
-
 .order-info h3 {
   padding-bottom: 25px;
+}
+
+.contact-info {
+  text-align: right;
+  border-left: 1px solid white;
+}
+
+#email a {
+  color: white;
+  opacity: 0.75;
+}
+
+#email a:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#insta a {
+  opacity: 0.75;
+  color: white;
+}
+
+#insta img {
+  width: 30px;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+
+#insta a:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
