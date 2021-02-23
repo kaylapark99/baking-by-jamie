@@ -202,6 +202,10 @@ svg {
   margin-top: 50px;
 }
 
+.contact-info-content h1 {
+  font-size: 2rem;
+}
+
 #email a {
   color: white;
   opacity: 0.75;
@@ -281,14 +285,6 @@ svg {
   .contact-info-content {
     position: absolute;
     bottom: 0;
-    right: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .contact-info-content {
-    position: absolute;
-    top: 0;
     right: 0;
   }
 }
