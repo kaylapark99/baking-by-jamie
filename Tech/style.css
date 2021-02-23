@@ -1,5 +1,8 @@
+/* || GENERAL STYLING */
+
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +22,7 @@ a:hover {
 
 a {
   transition: 0.5s;
+  cursor: pointer;
 }
 
 img {
@@ -29,11 +33,25 @@ ul li {
   display: inline-block;
 }
 
+.center {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* || NAVIGATION  */
+
 .nav {
   position: fixed;
   z-index: 10;
   height: 80px;
-  width: 100%;
   background-color: #f9c3d6;
   box-shadow: 0 5px 20px #b5748f;
 }
@@ -57,6 +75,7 @@ ul li {
 .nav ul li a {
   position: relative;
   color: white;
+  font-size: 0.9rem;
   display: inherit;
   top: 50%;
   transform: translate(0, -50%);
@@ -65,6 +84,8 @@ ul li {
 .nav ul li a:hover {
   color: #b5748f;
 }
+
+/* || HEADER */
 
 header {
   height: 100vh;
@@ -77,28 +98,19 @@ header {
   z-index: -1;
 }
 
-.center {
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.center-text {
-  text-align: center;
-}
-
 .header-fix {
   position: fixed;
 }
 
 .logo {
-  width: 30%;
+  width: 70%;
   top: 50%;
 }
 
 .slogan {
-  top: 85%;
+  top: 80%;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 svg {
@@ -106,23 +118,10 @@ svg {
   top: 100vh;
 }
 
+/* ABOUT SECTION */
+
 .story {
   background: white;
-  color: #b5748f;
-  font-size: 1.1rem;
-}
-
-.story p {
-  padding-top: 25px;
-  padding-bottom: 50px;
-  border-bottom: 3px solid #b5748f;
-}
-
-.story a {
-  color: #f9c3d6;
-}
-
-.story a:hover {
   color: #b5748f;
 }
 
@@ -130,50 +129,77 @@ svg {
   padding: 50px;
 }
 
+.about-content h1 {
+  font-size: 1.8rem;
+}
+
+.about-content p {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  font-size: 1.1rem;
+  border-bottom: 3px solid #b5748f;
+}
+
+.about-content a {
+  color: #f9c3d6;
+}
+
+.about-content a:hover {
+  color: #b5748f;
+}
+
+/* BAKED GOODS DISPLAY PICTURES  */
+
 .goodies {
-  padding: 50px;
+  padding: 25px;
   background: #fdeef5;
   color: #b5748f;
 }
 
 .goodies h1 {
-  font-size: 4rem;
+  margin-top: 30px;
+  font-size: 2rem;
 }
 
-.goodies ul {
+.goodies-options {
+  padding: 20px 0;
   border-bottom: 1px solid #b5748f;
 }
 
-.goodies ul li {
-  padding: 20px 50px;
+.goodies-options li {
   opacity: 0.5;
   cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
 }
 
 .clicked {
   opacity: 1 !important;
 }
 
-.hide {
-  display: none;
-}
-
 .goodies-pics img {
   margin-bottom: 30px;
 }
+
+/* CONTACT SECTION */
 
 .order {
   padding: 50px;
   color: white;
   background: #b5748f;
 }
+
+.order-info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
 .order-info h3 {
   padding-bottom: 25px;
 }
 
 .contact-info {
-  text-align: right;
-  border-left: 1px solid white;
+  margin-top: 50px;
 }
 
 #email a {
@@ -200,4 +226,69 @@ svg {
 #insta a:hover {
   opacity: 1;
   transition: 0.5s;
+}
+
+/* || RESPONSIVE DESIGN */
+
+@media (min-width: 576px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 30%;
+  }
+
+  .slogan {
+    top: 85%;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .about-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .goodies {
+    padding: 50px;
+  }
+
+  .goodies h1 {
+    font-size: 4rem;
+  }
+
+  .goodies-options li {
+    font-size: 1.2rem;
+  }
+
+  .order-info {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .contact-info {
+    margin-top: 0;
+    text-align: right;
+    border-left: 1px solid white;
+  }
+
+  .contact-info-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-info-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
