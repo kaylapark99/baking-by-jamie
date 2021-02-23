@@ -16,6 +16,8 @@ body {
   padding: 0;
 }
 
+/* || UTILITIES */
+
 a:hover {
   text-decoration: none;
 }
@@ -42,6 +44,10 @@ ul li {
   text-align: center;
 }
 
+.inherit-height {
+  height: inherit;
+}
+
 .hide {
   display: none;
 }
@@ -56,23 +62,20 @@ ul li {
   box-shadow: 0 5px 20px #b5748f;
 }
 
-.nav ul {
+.nav-options {
   margin: 0;
-  height: inherit;
 }
 
-.nav ul li {
+.nav-options li {
   text-align: center;
-  height: inherit;
 }
 
-.nav ul li img {
+.nav-options li img {
   object-fit: contain;
-  height: inherit;
   padding: 10px;
 }
 
-.nav ul li a {
+.nav-options li a {
   position: relative;
   color: white;
   font-size: 0.9rem;
@@ -81,7 +84,7 @@ ul li {
   transform: translate(0, -50%);
 }
 
-.nav ul li a:hover {
+.nav-options li a:hover {
   color: #b5748f;
 }
 
